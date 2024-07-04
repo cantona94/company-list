@@ -44,7 +44,7 @@ export const Home = () => {
   };
 
   return (
-    <main className="flex justify-between m-auto max-w-[1250px] py-8 px-4 gap-10">
+    <main className="flex justify-between m-auto w-[1250px] py-8 px-4 gap-10">
       <>
         <CompanyTable
           companyList={companyList}
