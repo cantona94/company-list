@@ -15,7 +15,7 @@ interface IProps {
   setCheckboxesCompany: Dispatch<React.SetStateAction<string[]>>;
 }
 
-export const TableCompany = ({
+export const CompanyBlog = ({
   companyList,
   checkboxesCompany,
   setCheckboxesCompany,

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/app/app-store';
-import { TableCompany } from '@/widgets/table-company';
-import { TableEmployee } from '@/widgets/table-employee';
+import { CompanyBlog } from '@/widgets/company-blog';
+import { EmployeeBlog } from '@/widgets/employee-blog';
 import { ICompany, IEmployee } from '@/shared/types';
 
 export const HomePage = () => {
@@ -47,13 +47,13 @@ export const HomePage = () => {
   return (
     <main className="flex justify-between m-auto w-[1250px] py-8 px-4 gap-10">
       <>
-        <TableCompany
+        <CompanyBlog
           companyList={companyList}
           checkboxesCompany={checkboxesCompany}
           setCheckboxesCompany={setCheckboxesCompany}
         />
         {checkboxesCompany.length === 1 && (
-          <TableEmployee
+          <EmployeeBlog
             employeeList={employeeList}
             companyId={checkboxesCompany[0]}
           />

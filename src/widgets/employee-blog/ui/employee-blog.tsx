@@ -12,7 +12,7 @@ interface IProps {
   companyId: string;
 }
 
-export const TableEmployee = ({ employeeList, companyId }: IProps) => {
+export const EmployeeBlog = ({ employeeList, companyId }: IProps) => {
   const dispatch = useDispatch();
 
   const [checkboxes, setCheckboxes] = useState<string[]>([]);
